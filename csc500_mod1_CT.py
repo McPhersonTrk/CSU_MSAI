@@ -57,7 +57,8 @@ num2 = float(input("Enter the second number: "))
 product= multiply(num1, num2)
 quotient= divide(num1, num2)
 
-print(f"The multiple of {num1} by {num2} is {multiply:,.5f}!")
+print(f"The multiple of {num1} by {num2} is {product:,.5f}!")
 
 #calculate the difference function
-print(f"The division of {num1} by {num2} is {divide:,.5f}! ")
+print(f"The division of {num1} by {num2} is {quotient:,.5f}! ")
+114
