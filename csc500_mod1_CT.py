@@ -1,7 +1,7 @@
 ##### Module 1 Criticle Thinking
 ##### Colorado State University Global Campus
 ##### csc500-1
-##### Dr Jessica SCwartz 
+##### Dr Jessica Schwartz 
 
 # Part 1.
 ## Write a Python Program to find addition and subtraction of two numbers.
