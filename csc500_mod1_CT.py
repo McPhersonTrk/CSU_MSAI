@@ -10,7 +10,7 @@
 - Also, subtract the two numbers to find the output."""
 
 # Part1: Code
-# Function to add two numbers, 'the sum fiunction'.
+# Function to add two numbers, 'the sum function'.
 def add(num1, num2):
     return num1 + num2
 
@@ -45,7 +45,7 @@ the results and GIT repository in a single document (Word is preferred)."""
 def multiply(num1, num2):
     return num1 * num2
 
-# Function to subtract two numbers, 'the differnece function'.
+# Function to subtract two numbers, 'the difference function'.
 def divide(num1, num2):
     return num1 / num2  
 
