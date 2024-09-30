@@ -1,30 +1,34 @@
-# Part 2
-'''
-The CSU Global Bookstore has a book club that awards points to its students
-based on the number of books purchased each month.
-The points are awarded as follows:
---If a customer purchases 0 books, they earn 0 points.
---If a customer purchases 2 books, they earn 5 points.
---If a customer purchases 4 books, they earn 15 points.
---If a customer purchases 6 books, they earn 30 points.
---If a customer purchases 8 or more books, they earn 60 points.
-Write a program that asks the user to enter the number of books that they have
-purchased this month and then display the number of points awarded.'''
+#The program should let the user enter a course number and then it should display the course's room number, instructor, and meeting time.
+# create three dictionaries: 
+# one that maps course numbers to room numbers, 
+# one that maps course numbers to instructors, 
+# and one that maps course numbers to meeting times.
 
-# get the number of books purchased
-books = int(input("Enter the number of books purchased: "))
-points = 0
+# create a function that gets user input for a course number and then displays the course's room number, instructor, and meeting time.
+# If the course number doesn't exist in the dictionaries, the program should display a message saying that the course number doesn't exist.
+# The program should continue to prompt the user for input until the user enters a valid
 
-# odd number of books purchased creates a bug
-# adust inpput to round down to nearest even number
-if books % 2 != 0:  # if books/2 has a non-0 remainder (it's odd) &
-    books -= 1 # then subtract 1 from the number of books.
+# Main function:
+def main():
+    # Room number dicytionary
+    classroom = {'CSC101': '3004', 'CSC102': '4501', 'CSC103': '6755', 'NET110': '1244', 'COM241': '1411'}
+    # Instructor dictionary
+    instructor = {'CSC101': 'Haynes', 'CSC102': 'Alvarado', 'CSC103': 'Rich', 'NET110': 'Burke', 'COM241': 'Lee'}
+    # Meeting time dictionary
+    start_time = {'CSC101': '8:00 a.m.', 'CSC102': '9:00 a.m.', 'CSC103': '10:00 a.m.', 'NET110': '11:00 a.m.', 'COM241': '1:00 p.m.'}
 
-if books == 0: points = 0
-elif books <= 2: points = 5 #
-elif books <= 4: points = 15
-elif books <= 6: points = 30
-elif books >= 8: points = 60
-# display the number of books purchased and points awarded
-print(f"Qualifying Books Purchased: {books}")
-print(f"Points awarded: {points}")
+    while True:
+        # get user input
+        course_number= input("Enter a course number (e.g., CSC101): ").strip().upper()
+        # Print the course details
+        if course_number in classroom:
+            print(f"Course Number: {course_number}")
+            print(f"Instructor: {instructor[course_number]}")
+            print(f"Room Number: {classroom[course_number]}")
+            print(f"Meeting Time: {start_time[course_number]}")
+            break #exit the loop if the course number is valid
+        else:
+            print("That course number does not exist.")
+#call the fuinction
+if __name__ == "__main__":
+    main()
