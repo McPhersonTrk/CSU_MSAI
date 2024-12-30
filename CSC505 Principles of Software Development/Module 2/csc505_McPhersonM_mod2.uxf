@@ -1,0 +1,75 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>10</y><w>100</w><h>30</h></coordinates><panel_attributes>Start New Project</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;New Project&gt;&gt;
+Package::FatClass
+--
+-new_project:11
+requirements: 11
+design: 11
+implementation: 11
+testing: 11
+deployment: 11</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>140</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Communnicatsion&gt;&gt;
+Package::FatClass
+
+--
+new_project: 22
+requirements: 22
+design: 22
+implementation: 22
+testing: 22
+deployment: 22</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>190</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Plan&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+new_project: 33
+requirements: 33
+design: 33
+implementation: 33
+testing: 33
+deployment: 33</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>240</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Model&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+new_project: 44
+requirements: 44
+design: 44
+implementation: 44
+testing: 44
+deployment: 44</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>480</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Construction&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+new_project: 55
+requirements: 55
+design: 55
+implementation: 55
+testing: 55
+deployment: 55</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>530</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Feedback&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+new_project: 66
+requirements: 66
+design: 66
+implementation: 66
+testing: 66
+deployment: 66</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>700</y><w>210</w><h>70</h></coordinates><panel_attributes>Project Complete
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>580</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Deployment&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+new_project: 77
+requirements: 77
+design: 77
+implementation: 77
+testing: 77
+deployment: 77</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>20</y><w>50</w><h>770</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;750</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>730</y><w>930</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;60;820;70;910;60;890;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>760</y><w>140</w><h>60</h></coordinates><panel_attributes>After Action Review, 
+Lessons Learned
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>320</y><w>890</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;160;10;130;840;130;870;80;830;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>90</y><w>150</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>110;50;110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>0</y><w>150</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>110;80;110;20;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>140</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>120;50;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>190</y><w>150</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>110;50;115;16;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>590</y><w>210</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>170;110;165;16;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>530</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>120;50;115;16;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>480</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>120;50;115;16;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>10</y><w>100</w><h>30</h></coordinates><panel_attributes>Start New Project</panel_attributes><additional_attributes></additional_attributes></element></diagram>
