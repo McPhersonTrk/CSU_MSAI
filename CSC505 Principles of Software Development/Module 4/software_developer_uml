@@ -1,0 +1,48 @@
+digraph "UML Diagram for SoftwareDeveloper" {
+	rankdir=TB size=8
+	SoftwareDeveloper [label="SoftwareDeveloper|
++ traits: list[str]\l
+---------------
++ show_traits()\l" shape=record]
+	DeveloperTraitsBuilder [label="DeveloperTraitsBuilder (Abstract)|
++ developer: SoftwareDeveloper\l
+---------------
++ add_analytical_thinking()\l
++ add_teamwork()\l
++ add_continuous_learning()\l
++ add_communication_skills()\l
++ add_adaptability()\l
++ add_attention_to_detail()\l
++ add_creativity()\l
++ add_resilience()\l
++ add_dependability()\l
++ add_time_management()\l
++ add_leadership()\l
++ add_curiosity()\l
++ add_empathy()\l
++ add_ethical_thinking()\l
++ get_result()\l" shape=record]
+	SoftwareDeveloperBuilder [label="SoftwareDeveloperBuilder|
++ add_analytical_thinking()\l
++ add_teamwork()\l
++ add_continuous_learning()\l
++ add_communication_skills()\l
++ add_adaptability()\l
++ add_attention_to_detail()\l
++ add_creativity()\l
++ add_resilience()\l
++ add_dependability()\l
++ add_time_management()\l
++ add_leadership()\l
++ add_curiosity()\l
++ add_empathy()\l
++ add_ethical_thinking()\l
++ get_result()\l" shape=record]
+	SoftwareDevelopmentDirector [label="SoftwareDevelopmentDirector|
++ builder: DeveloperTraitsBuilder\l
+---------------
++ construct_full_developer()\l" shape=record]
+	SoftwareDeveloperBuilder -> DeveloperTraitsBuilder [label=inherits]
+	SoftwareDevelopmentDirector -> DeveloperTraitsBuilder [label=uses]
+	DeveloperTraitsBuilder -> SoftwareDeveloper [label=creates]
+}
