@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f4d8204aaab2b28df2ff6e7efd7bbbc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f4d8204aaab2b28df2ff6e7efd7bbbc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f4d8204aaab2b28df2ff6e7efd7bbbc = L.map(
+                "map_8f4d8204aaab2b28df2ff6e7efd7bbbc",
+                {
+                    center: [38.77287390000001, -104.7165812],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7eefa84b277f8bcdae1d21a27d7fa83c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7eefa84b277f8bcdae1d21a27d7fa83c.addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var marker_73e7b413818c153e0ed1bb36d17d11eb = L.marker(
+                [38.77287390000001, -104.7165812],
+                {}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var icon_6ef9465c4f34c2dbc7b4040f401e7856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_73e7b413818c153e0ed1bb36d17d11eb.setIcon(icon_6ef9465c4f34c2dbc7b4040f401e7856);
+        
+    
+        var popup_01b9c71328bd9f923d916158ac2e4e9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0bbefbc83e15ac1c4951f5257f8cb4e = $(`<div id="html_d0bbefbc83e15ac1c4951f5257f8cb4e" style="width: 100.0%; height: 100.0%;">AmazonStart - 4222 Integration Loop 1030 Colorado Springs CO 80916</div>`)[0];
+                popup_01b9c71328bd9f923d916158ac2e4e9a.setContent(html_d0bbefbc83e15ac1c4951f5257f8cb4e);
+            
+        
+
+        marker_73e7b413818c153e0ed1bb36d17d11eb.bindPopup(popup_01b9c71328bd9f923d916158ac2e4e9a)
+        ;
+
+        
+    
+    
+            marker_73e7b413818c153e0ed1bb36d17d11eb.bindTooltip(
+                `<div>
+                     AmazonStart
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_540535dd42346593d9776e8ca19aab37 = L.marker(
+                [38.7804842, -104.7316208],
+                {}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var icon_fa6af94c0252e75c2b946b509342f489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_540535dd42346593d9776e8ca19aab37.setIcon(icon_fa6af94c0252e75c2b946b509342f489);
+        
+    
+        var popup_2142c597bdd8aedfaa49bbd6f7bb524a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_863dff53d6df34391a657cb69d28579b = $(`<div id="html_863dff53d6df34391a657cb69d28579b" style="width: 100.0%; height: 100.0%;">del3 - 5360 BARNSTORMERS AVE COLORADO SPRINGS CO 80911-1277 USA</div>`)[0];
+                popup_2142c597bdd8aedfaa49bbd6f7bb524a.setContent(html_863dff53d6df34391a657cb69d28579b);
+            
+        
+
+        marker_540535dd42346593d9776e8ca19aab37.bindPopup(popup_2142c597bdd8aedfaa49bbd6f7bb524a)
+        ;
+
+        
+    
+    
+            marker_540535dd42346593d9776e8ca19aab37.bindTooltip(
+                `<div>
+                     del3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5363a2444e00c386edcd6e77d1cd31f9 = L.marker(
+                [38.81335199999999, -104.8780435],
+                {}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var icon_77b7f51608edd9654de3064bd3a1cd5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5363a2444e00c386edcd6e77d1cd31f9.setIcon(icon_77b7f51608edd9654de3064bd3a1cd5f);
+        
+    
+        var popup_a6740e54bc41cb72667a56300bbd5404 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e57149110e15d539f6ecdd7452c62744 = $(`<div id="html_e57149110e15d539f6ecdd7452c62744" style="width: 100.0%; height: 100.0%;">del1 - 3200 BONNE VISTA DR COLORADO SPRINGS CO 80906-5845 USA</div>`)[0];
+                popup_a6740e54bc41cb72667a56300bbd5404.setContent(html_e57149110e15d539f6ecdd7452c62744);
+            
+        
+
+        marker_5363a2444e00c386edcd6e77d1cd31f9.bindPopup(popup_a6740e54bc41cb72667a56300bbd5404)
+        ;
+
+        
+    
+    
+            marker_5363a2444e00c386edcd6e77d1cd31f9.bindTooltip(
+                `<div>
+                     del1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_553ea28a84f9c919e38af04f18737df8 = L.marker(
+                [38.9415032, -104.7912778],
+                {}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var icon_52137338554020609c62b626777d3c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_553ea28a84f9c919e38af04f18737df8.setIcon(icon_52137338554020609c62b626777d3c02);
+        
+    
+        var popup_e0bda7d6a0141e84a09584ad5d10ac6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00268ab371dd74bdb318c000b79609be = $(`<div id="html_00268ab371dd74bdb318c000b79609be" style="width: 100.0%; height: 100.0%;">del2 - 7600 TIMBERLINE CT COLORADO SPRINGS CO 80920-3744 USA</div>`)[0];
+                popup_e0bda7d6a0141e84a09584ad5d10ac6e.setContent(html_00268ab371dd74bdb318c000b79609be);
+            
+        
+
+        marker_553ea28a84f9c919e38af04f18737df8.bindPopup(popup_e0bda7d6a0141e84a09584ad5d10ac6e)
+        ;
+
+        
+    
+    
+            marker_553ea28a84f9c919e38af04f18737df8.bindTooltip(
+                `<div>
+                     del2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59ef99f872699f1e7fe37153b5bdb849 = L.marker(
+                [38.77287390000001, -104.7165812],
+                {}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var icon_706dfb6e6e966e913b9ef2a0d35bd073 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59ef99f872699f1e7fe37153b5bdb849.setIcon(icon_706dfb6e6e966e913b9ef2a0d35bd073);
+        
+    
+        var popup_33a6e3325a97487cbb5cce27bdef8eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0126fcb900d6f4bc61978f197ddf3f38 = $(`<div id="html_0126fcb900d6f4bc61978f197ddf3f38" style="width: 100.0%; height: 100.0%;">AmazonEnd - 4222 Integration Loop 1030 Colorado Springs CO 80916</div>`)[0];
+                popup_33a6e3325a97487cbb5cce27bdef8eb3.setContent(html_0126fcb900d6f4bc61978f197ddf3f38);
+            
+        
+
+        marker_59ef99f872699f1e7fe37153b5bdb849.bindPopup(popup_33a6e3325a97487cbb5cce27bdef8eb3)
+        ;
+
+        
+    
+    
+            marker_59ef99f872699f1e7fe37153b5bdb849.bindTooltip(
+                `<div>
+                     AmazonEnd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a8579348ccd765dccc2ff52df8bf1aea = L.polyline(
+                [[38.7728998, -104.7161583], [38.7729028, -104.7153721], [38.7722017, -104.7153658], [38.7723019, -104.7141001], [38.7716948, -104.7135742], [38.759029, -104.7191472], [38.7698359, -104.7360114], [38.7748432, -104.7360203], [38.7760895, -104.7286586], [38.7793839, -104.730349], [38.7792475, -104.7310075], [38.7805934, -104.7313661]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var poly_line_4a9b6f14bd450c0db498908ba4520a51 = L.polyline(
+                [[38.7805934, -104.7313661], [38.7792475, -104.7310075], [38.7793839, -104.730349], [38.7814681, -104.7299184], [38.7812264, -104.7239962], [38.7811428, -104.7524213], [38.7758816, -104.7575632], [38.7649505, -104.7746288], [38.8230273, -104.8362327], [38.8277465, -104.8352878], [38.8405026, -104.859098], [38.8203703, -104.8593882], [38.8204369, -104.8645158], [38.8166649, -104.8645756], [38.8157613, -104.8709361], [38.8142016, -104.8708674], [38.8128261, -104.8780935]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var poly_line_6bebc561bc1d49aa0e6d553343ab784e = L.polyline(
+                [[38.8128261, -104.8780935], [38.8142016, -104.8708674], [38.8157613, -104.8709361], [38.8166649, -104.8645756], [38.8204369, -104.8645158], [38.8203703, -104.8593882], [38.8399728, -104.859141], [38.828007, -104.8363711], [38.8277864, -104.8355163], [38.9494552, -104.8116838], [38.9506663, -104.8057859], [38.9451633, -104.8009043], [38.9444425, -104.7922622], [38.9430671, -104.7929324], [38.9427865, -104.7920152], [38.9414947, -104.7921333], [38.9414979, -104.7912778]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+    
+            var poly_line_d1a2aa10415438d92d7a2fab1aa7545d = L.polyline(
+                [[38.9414979, -104.7912778], [38.9414733, -104.7887064], [38.94073119999999, -104.7887157], [38.9407331, -104.7877348], [38.9396354, -104.78772], [38.9396568, -104.7845854], [38.9332448, -104.7845518], [38.9401119, -104.7245859], [38.8397867, -104.7209403], [38.8062359, -104.7303314], [38.7673531, -104.7183762], [38.77133800000001, -104.7132313], [38.7723019, -104.7141001], [38.7722017, -104.7153658], [38.7729028, -104.7153721], [38.7728998, -104.7161583]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_8f4d8204aaab2b28df2ff6e7efd7bbbc);
+        
+</script>
+</html>
