@@ -1,0 +1,38 @@
+# ATM UML State Diagram
+This file (`atm_state_diagram.dot`) represents the UML State Machine Diagram for an ATM.
+
+## How to View the Diagram
+- Use [Edotor](https://edotor.net/) or [Graphviz Online](https://dreampuf.github.io/GraphvizOnline/)
+- Or run:
+digraph ATM_State_Diagram {
+    rankdir=LR;
+    node [shape=rectangle];
+
+    Start [shape=circle, label="Start"];
+    PIN_Entry [label="PIN Entry\nentry/Prompt User"];
+    Validate_PIN [label="Validate PIN\nentry/Check PIN\nexit/Increment Attempt Counter (if incorrect)"];
+    Reject [shape=doublecircle, label="Reject Customer"];
+    Select_Transaction [label="Select Transaction\nentry/Display Options"];
+    Check_Balance [label="Check Balance\nentry/Fetch Account Balance\nexit/Authorize Transaction"];
+    Withdraw [label="Withdraw Money\nentry/Verify Funds\nexit/Deduct Amount"];
+    Deposit [label="Deposit Money\nentry/Accept Funds\nexit/Update Balance"];
+    Transfer [label="Transfer Funds\nentry/Verify Accounts\nexit/Complete Transfer"];
+    Print_Receipt [label="Print Receipt\nentry/Generate Statement"];
+    End [shape=doublecircle, label="End Transaction"];
+
+    Start -> PIN_Entry [label="Insert Card"];
+    PIN_Entry -> Validate_PIN [label="Enter PIN"];
+    Validate_PIN -> Reject [label="Enter PIN [Incorrect && Max Attempts Reached] / Reject Customer"];
+    Validate_PIN -> Select_Transaction [label="Enter PIN [Correct] / Grant Access"];
+    Select_Transaction -> Check_Balance [label="Withdraw or Transfer / Fetch Balance"];
+    Select_Transaction -> Deposit [label="Deposit / Accept Funds"];
+    Check_Balance -> Withdraw [label="Withdraw Request [Sufficient Balance] / Proceed with Withdrawal"];
+    Check_Balance -> Reject [label="Withdraw Request [Insufficient Balance] / Reject Transaction"];
+    Withdraw -> Print_Receipt [label="Transaction Complete / Print Receipt"];
+    Deposit -> Print_Receipt [label="Transaction Complete / Print Receipt"];
+    Transfer -> Print_Receipt [label="Transaction Complete / Print Receipt"];
+    Print_Receipt -> End [label="Print Complete / End Session"];
+}
+
+
+
